@@ -31,6 +31,7 @@ const Artists = () => {
         <Marquee speed={40} {...marqParams} style={{ width: "100vw" }}>
           {data.gallery.row1.map((src) => (
             <div className={styles.imgContainer}>
+              <a href=""></a>
               <img src={src.image} loading="lazy" />
               <h2>{src.name}</h2>
             </div>
