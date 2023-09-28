@@ -5,6 +5,7 @@ import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Home from "./Pages/Home/Home";
+import ProfileArtist from "./Pages/ProfileArtist/ProfileArtist";
 
 function App() {
   const router = createBrowserRouter([
@@ -12,7 +13,10 @@ function App() {
       path: "/",
       element: <Home />,
     },
-
+    {
+      path: "/profileartist",
+      element: <ProfileArtist />,
+    },
   ]);
   return <RouterProvider router={router} />;
 }

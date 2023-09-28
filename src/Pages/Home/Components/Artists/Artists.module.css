@@ -1,0 +1,33 @@
+.gallery {
+    padding-bottom: 0rem;
+}
+
+.gallery h2 {
+    color: #b95d0b;
+    font-size: 35px;
+    text-align: center;
+}
+.row {
+    transition: all 2s ease-in-out;
+
+}
+
+.imgContainer {
+    padding: 0.5rem;
+    height: 400px;
+    width: 300px;
+    position: relative;
+
+}
+
+.gallery .imgContainer img {
+    height: 100%;
+    width: 100%;
+}
+
+.imgContainer h2{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    z-index: 888;
+    bottom: 0;
+}
