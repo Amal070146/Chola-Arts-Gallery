@@ -1,37 +1,120 @@
 .wrapper {
+  padding: 4vh 8vw;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
+  position: relative;
+  height: 42vw;
   align-items: center;
-  justify-content: center;
-  text-align: center;
-  gap: 15px;
-  width: 100%;
-  padding: 0px 5%;
 }
-
-.wrapper div {
+.TopContainer {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  width: 100%;
 }
 
-.wrapper div img {
-  min-height: 300px;
-  min-width: 260px;
-  width: 20%;
-  object-fit: cover;
+.TopContainer h1 {
+  font-size: 12vw;
+  font-weight: 200;
+  color: rgba(243, 171, 130, 0.07);
 }
-.wrapper div > div {
-  width: 70%;
+.TopContainer img {
+  border: 0.8vw solid white;
+
+  width: 38vw;
+}
+.ballsImage {
+  position: absolute;
+  width: 6vw;
+  height: 100px;
+  object-fit: contain;
+  left: 13vw;
+  top: 21.5vh;
+}
+.BottomContainer {
   display: flex;
   flex-direction: column;
+  gap: 6vh;
+  background-color: rgba(231, 89, 19, 1);
+  border: 1.5vw solid #f3ab82;
+  color: white;
+  padding: 2vh 4vw 4vh;
+  position: absolute;
+  z-index: -1;
+  top: 14vw;
+  width: 85%;
+}
+.BottomContainer > div {
+  display: flex;
+  align-items: center;
+  gap: 1.5vw;
 }
 
-@media screen and (max-width: 1020px) {
-  .wrapper div > div {
-    width: 100%;
+.BottomContainer > div .line {
+  width: 5px;
+  height: 6.5vw;
+  background-color: rgba(243, 171, 130, 1);
+}
+.BottomContainer > div h1 {
+  font-size: 7vw;
+  font-weight: 300;
+}
+
+.BottomContainer > p {
+  font-size: 1.4vw;
+  text-align: justify;
+  font-weight: 300;
+}
+@media screen and (max-width: 1400px) {
+  .wrapper {
+    height: 45vw;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .BottomContainer > p {
+    font-size: 1.9vw;
+  }
+  .wrapper {
+    height: 53vw;
+  }
+}
+@media screen and (max-width: 840px) {
+  .wrapper {
+    height: 55vw;
+  }
+}
+@media screen and (max-width: 700px) {
+  .wrapper {
+    height: fit-content;
+  }
+  .ballsImage {
+    display: none;
+  }
+  .TopContainer {
+    align-items: center;
+    justify-content: center;
+  }
+  .TopContainer h1 {
+    display: none;
+  }
+  .TopContainer img {
+    min-width: 350px;
+    border: none;
+    width: 90%;
+  }
+  .BottomContainer {
+    position: relative;
+    top: 0;
+    gap: 1.5vh;
+    width: 90%;
+    min-width: 350px;
+  }
+  .BottomContainer > div {
+    gap: 10px;
+  }
+  .BottomContainer > div h1 {
+    font-size: 35px;
+  }
+  .BottomContainer > p {
+    font-size: 16px;
   }
 }
