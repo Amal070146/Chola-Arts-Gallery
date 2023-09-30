@@ -1,12 +1,112 @@
-import React from 'react'
-import styles from './Navbar.module.css'
+import React, { useEffect, useState } from "react";
+import styles from "./Navbar.module.css";
+import { useReactPath } from "./path.hook";
+import { LogoShortBlack } from "../../assets/svg.tsx";
+import { BiMenu } from "react-icons/bi";
+import { RxCross1 } from "react-icons/rx";
 
 const Navbar = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+  const [openmenu, setopenmenu] = useState(false);
+  const [navlogo, setnavlogo] = useState(false);
+  function openMenu() {
+    setopenmenu(!openmenu);
+  }
+  function closeMenu() {
+    setopenmenu(false);
+  }
 
-export default Navbar
+  const path = useReactPath();
+  const navContent = [
+    // t("about"),
+    "HOME",
+    "ABOUT",
+    "GALLERY",
+    "ARTISTS",
+    "TESTIMONIALS",
+  ];
+
+  useEffect(() => {}, [path]);
+  const changenavlogo = () => {
+    window.scrollY >= 250 ? setnavlogo(true) : setnavlogo(false);
+    return navlogo;
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", changenavlogo);
+
+    return () => {
+      window.removeEventListener("scroll", changenavlogo);
+    };
+  }, []);
+
+  return (
+    <div className={styles.navbarWrapper}>
+      <div className={styles.navbar}>
+        <a href="/home">
+          <LogoShortBlack />
+        </a>
+        <div className={styles.navbarDesk}>
+          {" "}
+          {navContent.map((content, i) => (
+            <a href={`#${content}`} key={i.toString() + content}>
+              <p
+                style={{
+                  color: window.location.href.includes(`#${content}`)
+                    ? "rgba(231, 89, 19, 1)"
+                    : "",
+                  fontWeight: window.location.href.includes(`#${content}`)
+                    ? 600
+                    : 400,
+                  textTransform: "capitalize",
+                }}
+              >
+                {content}
+              </p>
+            </a>
+          ))}
+        </div>
+        <a href="" className={styles.buttonContent}>
+          CONTACT
+        </a>
+        <div className={styles.navbarMob}>
+          <button
+            style={{ backgroundColor: "transparent", border: "none" }}
+            onClick={openMenu}
+          >
+            {openmenu ? (
+              <RxCross1 style={{ color: "black", fontSize: "40px" }} />
+            ) : (
+              <BiMenu style={{ color: "black", fontSize: "40px" }} />
+            )}
+          </button>
+
+          {openmenu && (
+            <div className={styles.menuDiv}>
+              <div className={styles.innerSetMenuDiv}>
+                {navContent.map((content, i) => (
+                  <a href={`#${content}`} key={i.toString() + content}>
+                    <p
+                      style={{
+                        color: window.location.href.includes(`#${content}`)
+                          ? "rgba(231, 89, 19, 1)"
+                          : "",
+                        fontWeight: window.location.href.includes(`#${content}`)
+                          ? 600
+                          : 400,
+                        textTransform: "capitalize",
+                      }}
+                    >
+                      {content}
+                    </p>
+                  </a>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Navbar;

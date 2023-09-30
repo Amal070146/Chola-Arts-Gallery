@@ -1,0 +1,94 @@
+.navbarWrapper {
+  display: flex;
+  width: 100%;
+}
+.navbar {
+  display: flex;
+  width: 100%;
+  padding: 1.5vh 3vw;
+  align-items: center;
+
+  position: fixed;
+  z-index: 9000;
+  justify-content: space-between;
+  top: 0;
+  font-size: 17px;
+  background-color: white;
+}
+
+.navbarDesk {
+  display: flex;
+  align-items: center;
+  gap: 2.8vw;
+}
+.buttonContent {
+  border: 1px solid rgba(231, 89, 19, 1);
+  padding: 8px 10px;
+}
+.buttonContent:hover {
+  background-color: rgba(231, 89, 19, 1);
+  color: white;
+}
+.navbarMob {
+  display: none;
+}
+.navbarWrapper a {
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  font-size: 17px;
+}
+.navbarWrapper a p {
+  text-transform: uppercase;
+}
+
+.navbar button {
+  margin-top: 5px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-weight: 500;
+  font-size: 17px;
+  cursor: pointer;
+  font-family: "Red Hat Text";
+}
+
+@media screen and (max-width: 900px) {
+  .navbar {
+    justify-content: space-between;
+  }
+  .navbarMob {
+    display: flex;
+ 
+  }
+  .navbarDesk {
+    display: none;
+  }
+  .menuDiv {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    height: 90vh;
+    padding: 160px 10px 0px 10px;
+    gap: 20px;
+    background-color: white;
+  }
+  .innerSetMenuDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: -10vh;
+  }
+
+  .menuDiv a,
+  .menuDiv button {
+    color: black;
+  }
+  .buttonContent {
+    display: none;
+  }
+}
