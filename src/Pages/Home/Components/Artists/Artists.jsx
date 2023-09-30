@@ -22,7 +22,11 @@ const Artists = () => {
   console.log(marqueeSpeed);
   return (
     <div className={styles.gallery}>
-      <h2>Artists</h2>
+      <div className={styles.header}>
+        <h1>Artists</h1>
+        <div className={styles.line}></div>
+      </div>
+
       <div
         className={styles.row}
         onMouseEnter={handleMouseEnter}

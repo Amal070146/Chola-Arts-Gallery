@@ -1,11 +1,24 @@
 .gallery {
-  padding-bottom: 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
 }
 
-.gallery h2 {
-  color: #b95d0b;
-  font-size: 35px;
-  text-align: center;
+.header {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 0px 8vw;
+}
+.header .line {
+  width: 5px;
+  height: 6vw;
+  background-color: rgba(231, 89, 19, 1);
+}
+.header h1 {
+  font-size: 7vw;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 .row {
   transition: all 2s ease-in-out;
@@ -33,5 +46,8 @@
   color: rgb(255, 255, 255);
   position: absolute;
   z-index: 888;
-  bottom: 0;
+  bottom: 10%;
+  left: 10%;
+  font-weight: 400;
+  text-transform: uppercase;
 }

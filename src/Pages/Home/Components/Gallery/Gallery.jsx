@@ -49,8 +49,13 @@ const Gallery = () => {
   }, []);
 
   return (
-    <div className={styles.galleryWrapper}>
-      <h1>Gallery</h1>
+    <div className={styles.galleryWrapper} id="GALLERY">
+      <div className={styles.header}>
+        {" "}
+        <div className={styles.line}></div>
+        <h1>Gallery</h1>
+      </div>
+
       <div className={styles.contentWrapper}>
         {imageSets.map((imageSet, i) => (
           <div
