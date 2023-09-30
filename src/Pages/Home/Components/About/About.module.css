@@ -2,6 +2,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  gap: 2vh;
 }
 
 .wrapper {
@@ -11,7 +12,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  height: 42vw;
+
   align-items: center;
 }
 .TopContainer {
@@ -44,10 +45,11 @@
   border: 1.5vw solid #f3ab82;
   color: white;
   padding: 2vh 4vw 4vh;
-  position: absolute;
+  
   z-index: -1;
   top: 14vw;
-  width: 85%;
+  width: 100%;
+  margin-top: -13vw;
 }
 .BottomContainer > div {
   display: flex;
@@ -70,11 +72,7 @@
   text-align: justify;
   font-weight: 300;
 }
-@media screen and (max-width: 1400px) {
-  .wrapper {
-    height: 45vw;
-  }
-}
+
 @media screen and (max-width: 1000px) {
   .BottomContainer > p {
     font-size: 1.9vw;
@@ -84,9 +82,7 @@
   }
 }
 @media screen and (max-width: 840px) {
-  .wrapper {
-    height: 55vw;
-  }
+
 }
 @media screen and (max-width: 700px) {
   .wrapper {
@@ -113,6 +109,7 @@
     gap: 1.5vh;
     width: 90%;
     min-width: 350px;
+    margin-top: 0;
   }
   .BottomContainer > div {
     gap: 10px;
@@ -134,14 +131,14 @@
 }
 
 .wrapperCEO .TopContainer h1 {
-  color: rgba(198, 198, 198, 0.1);
+  color: rgba(231, 89, 19, 0.07);
 }
 .wrapperCEO .TopContainer img {
   width: 30vw;
 }
 
 .wrapperCEO .ballsImages {
-  filter: grayscale(100%);
+ 
   width: 6vw;
   height: 100px;
   object-fit: contain;
@@ -154,7 +151,7 @@
 .wrapperCEO .line {
   width: 5px;
   height: 6.5vw;
-  background-color: rgba(198, 198, 198, 1);
+  background-color: rgba(231, 89, 19, 1);
 }
 .BottomContainers {
   width: 85%;
@@ -164,7 +161,7 @@
   align-items: end;
   gap: 4vh;
   background-color: #fff;
-  border: 1.5vw solid rgba(142, 142, 142, 0.5);
+  border: 1.5vw solid rgba(231, 89, 19, 1);
 
   padding: 2vh 4vw 4vh;
   margin-top: -12vw;
