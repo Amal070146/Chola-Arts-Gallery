@@ -3,7 +3,7 @@ import styles from "./About.module.css";
 
 const About = () => {
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} id="ABOUT">
       <h1>About</h1>
       <p>
         Lorem Ipsum is simply dummy text of the printing and typesetting
