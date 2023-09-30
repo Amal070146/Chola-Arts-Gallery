@@ -1,9 +1,11 @@
+
+
 {
   "gallery": {
     "row1": [
       {
         "name": "Amal",
-        "image": "https://th.bing.com/th/id/OIP.r10V5bespET6Fe5AQ1ak4gHaEd?pid=ImgDet&rs=1"
+        "image": "./assets/1.svg"
       },
       {
         "name": "Akhil",

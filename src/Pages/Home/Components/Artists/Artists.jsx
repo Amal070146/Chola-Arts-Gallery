@@ -3,6 +3,12 @@ import data from "../data.json";
 import Marquee from "react-fast-marquee";
 import styles from "./Artists.module.css";
 
+import img1 from "../assets/artists/1.svg";
+import img2 from "../assets/artists/3.svg";
+import img3 from "../assets/artists/5.svg";
+import img4 from "../assets/artists/6.svg";
+import img5 from "../assets/artists/7.svg";
+
 const Artists = () => {
   const [marqueeSpeed, setMarqueeSpeed] = useState(40);
 
@@ -19,7 +25,28 @@ const Artists = () => {
   const handleMouseLeave = () => {
     setMarqueeSpeed(40);
   };
-  console.log(marqueeSpeed);
+  const datas = [
+    {
+      name: "MURALI NAGAPUZHA",
+      image: img1,
+    },
+    {
+      name: "SAJITHA R SANHKER",
+      image: img2,
+    },
+    {
+      name: "SHAJI APPUKUTTAN",
+      image: img3,
+    },
+    {
+      name: "PRAMOD KURAMPALA",
+      image: img4,
+    },
+    {
+      name: "LEENA RAJ R",
+      image: img5,
+    },
+  ];
   return (
     <div className={styles.gallery}>
       <div className={styles.header}>
@@ -33,7 +60,7 @@ const Artists = () => {
         onMouseLeave={handleMouseLeave}
       >
         <Marquee speed={40} {...marqParams} style={{ width: "100vw" }}>
-          {data.gallery.row1.map((src) => (
+          {datas.map((src) => (
             <div className={styles.imgContainer}>
               <a href=""></a>
               <img src={src.image} loading="lazy" />
