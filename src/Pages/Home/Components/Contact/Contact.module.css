@@ -1,0 +1,103 @@
+.wrapper {
+  display: flex;
+  width: 100%;
+  height: 300px;
+  margin-top: 10vh;
+  margin-bottom: 3vh;
+}
+
+.left {
+  background: url("./left.svg") center center/cover no-repeat;
+  width: 150px;
+  height: 100%;
+}
+.center {
+  background: url("./logo.svg") center center/cover no-repeat;
+  min-width: 300px;
+  min-height: 300px;
+}
+.right {
+  background: url("./right.svg") center center/cover no-repeat;
+  width: 85%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 6vh 5vw;
+  gap: 1vw;
+}
+
+.right > div {
+  color: white;
+  text-align: center;
+  width: fit-content;
+}
+
+.right .location {
+  display: flex;
+
+  justify-content: center;
+  font-size: 20px;
+}
+.right .location p {
+  width: 230px;
+}
+.right .location img {
+  width: 20px;
+}
+
+.right .emailphone {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.right .emailphone a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  gap: 10px;
+  font-size: 20px;
+}
+
+.right .ceo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.right .ceo h1 {
+  font-size: 20px;
+}
+.right .ceo a {
+  display: flex;
+  gap: 10px;
+  font-size: 20px;
+  color: white;
+}
+
+@media screen and (max-width: 1300px) {
+  .right {
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 6vh 5vw;
+    gap: 1vw;
+  }
+}
+
+@media screen and (max-width: 650px){
+.wrapper{
+    flex-direction :column ;
+    height: 100%;
+}
+ .right{
+    width: 100%;
+    gap: 30px;
+ }
+ .center{
+    width: 100%;
+    height: 100%;
+    background:#fff url("./logo.svg") center center/contain no-repeat;
+ }
+}

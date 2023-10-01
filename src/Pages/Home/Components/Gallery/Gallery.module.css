@@ -51,6 +51,11 @@
     height: 30vh;
   }
 }
+@media screen and (max-width: 700px) {
+  .header h1{
+    font-size: 35px;
+  }
+}
 @media screen and (max-width: 500px) {
   .contentWrapper > div {
     width: 43vw;

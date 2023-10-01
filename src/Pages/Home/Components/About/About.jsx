@@ -34,12 +34,12 @@ const About = () => {
         <div className={styles.TopContainer}>
           <img src={jomon} alt="" />
 
-          <h1>THE CEO</h1>
+          <h1>THE CMD</h1>
         </div>
         <img className={styles.ballsImages} src={ball} alt="" />
         <div className={styles.BottomContainers}>
           <div>
-            <h1>THE CEO</h1>
+            <h1>THE CMD</h1>
             <div className={styles.line}></div>
           </div>
           <p>

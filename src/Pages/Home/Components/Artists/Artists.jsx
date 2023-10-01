@@ -48,7 +48,7 @@ const Artists = () => {
     },
   ];
   return (
-    <div className={styles.gallery}>
+    <div className={styles.gallery} id="ARTISTS">
       <div className={styles.header}>
         <h1>Artists</h1>
         <div className={styles.line}></div>
