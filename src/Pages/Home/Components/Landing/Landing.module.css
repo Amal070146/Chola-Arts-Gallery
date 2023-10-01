@@ -33,6 +33,7 @@
   font-size: 27px;
   line-height: 1;
   letter-spacing: 10px;
+  color: rgba(231, 89, 19, 1);
 }
 .left a{
   display: none;

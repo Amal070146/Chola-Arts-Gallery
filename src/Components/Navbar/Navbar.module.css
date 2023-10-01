@@ -58,7 +58,6 @@
   }
   .navbarMob {
     display: flex;
- 
   }
   .navbarDesk {
     display: none;
@@ -90,5 +89,13 @@
   }
   .buttonContent {
     display: none;
+  }
+  .buttonContents {
+    border: 1px solid rgba(231, 89, 19, 1);
+    padding: 9px 15px;
+  }
+  .buttonContents:hover {
+    background-color: rgba(231, 89, 19, 1);
+    color: white;
   }
 }

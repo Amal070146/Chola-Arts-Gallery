@@ -65,7 +65,7 @@ const Navbar = () => {
             </a>
           ))}
         </div>
-        <a href="" className={styles.buttonContent}>
+        <a href="#contact" className={styles.buttonContent}>
           CONTACT
         </a>
         <div className={styles.navbarMob}>
@@ -101,6 +101,9 @@ const Navbar = () => {
                   </a>
                 ))}
               </div>
+              <a href="#contact" className={styles.buttonContents}>
+                CONTACT
+              </a>
             </div>
           )}
         </div>
