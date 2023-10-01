@@ -4,7 +4,7 @@ import imgs from "./assets/locationIcon.svg";
 import { PhoneLogo, EmailLogo } from "../../../../assets/svg.tsx";
 const Contact = () => {
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} id="contact">
       <div className={styles.left}></div>
       <div className={styles.center}></div>
       <div className={styles.right}>

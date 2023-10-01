@@ -1,34 +1,31 @@
 import styles from "./Gallery.module.css";
 import React, { useState, useEffect } from "react";
 import data from "../data.json";
+import img1 from "./assets/1.svg";
+import img2 from "./assets/2.svg";
+import img3 from "./assets/3.svg";
+import img4 from "./assets/4.svg";
+import img5 from "./assets/5.svg";
+import img6 from "./assets/6.svg";
+import img7 from "./assets/7.svg";
+import img8 from "./assets/8.svg";
+import img9 from "./assets/9.svg";
+import img10 from "./assets/10.svg";
+import img11 from "./assets/11.svg";
+import img12 from "./assets/12.svg";
+import img13 from "./assets/13.svg";
+import img14 from "./assets/14.svg";
+import img15 from "./assets/15.svg";
+import img16 from "./assets/16.svg";
 
 const Gallery = () => {
   const imageSets = [
-    [
-      "https://th.bing.com/th/id/OIP.r10V5bespET6Fe5AQ1ak4gHaEd?pid=ImgDet&rs=1",
-      "https://th.bing.com/th/id/OIP.p5zC9uLm5ByGSy8gYI0McAHaE8?pid=ImgDet&rs=1",
-      "https://images.squarespace-cdn.com/content/v1/5c710438b914490d5769a64f/b4fb2b4f-5f95-41a1-9416-d156d0ae273f/Most+Famous+Astrologer+in+the+World.jpg",
-    ],
-    [
-      "https://th.bing.com/th/id/OIP.r10V5bespET6Fe5AQ1ak4gHaEd?pid=ImgDet&rs=1",
-      "https://th.bing.com/th/id/OIP.p5zC9uLm5ByGSy8gYI0McAHaE8?pid=ImgDet&rs=1",
-      "https://images.squarespace-cdn.com/content/v1/5c710438b914490d5769a64f/b4fb2b4f-5f95-41a1-9416-d156d0ae273f/Most+Famous+Astrologer+in+the+World.jpg",
-    ],
-    [
-      "https://th.bing.com/th/id/OIP.r10V5bespET6Fe5AQ1ak4gHaEd?pid=ImgDet&rs=1",
-      "https://th.bing.com/th/id/OIP.p5zC9uLm5ByGSy8gYI0McAHaE8?pid=ImgDet&rs=1",
-      "https://images.squarespace-cdn.com/content/v1/5c710438b914490d5769a64f/b4fb2b4f-5f95-41a1-9416-d156d0ae273f/Most+Famous+Astrologer+in+the+World.jpg",
-    ],
-    [
-      "https://th.bing.com/th/id/OIP.p5zC9uLm5ByGSy8gYI0McAHaE8?pid=ImgDet&rs=1",
-      "https://th.bing.com/th/id/OIP.r10V5bespET6Fe5AQ1ak4gHaEd?pid=ImgDet&rs=1",
-
-      "https://images.squarespace-cdn.com/content/v1/5c710438b914490d5769a64f/b4fb2b4f-5f95-41a1-9416-d156d0ae273f/Most+Famous+Astrologer+in+the+World.jpg",
-    ],
-    
+    [img1, img5, img9, img13],
+    [img2, img6, img10, img14],
+    [img3, img7, img11, img15],
+    [img4, img8, img12, img16],
   ];
   const [currentIndices, setCurrentIndices] = useState(Array(4).fill(0));
-
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -38,7 +35,7 @@ const Gallery = () => {
     }, 3000);
     return () => clearInterval(interval);
   }, []);
- 
+
   return (
     <div className={styles.galleryWrapper} id="GALLERY">
       <div className={styles.header}>

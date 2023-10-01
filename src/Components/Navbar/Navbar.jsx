@@ -22,7 +22,7 @@ const Navbar = () => {
     "ABOUT",
     "GALLERY",
     "ARTISTS",
-    "TESTIMONIALS",
+    "EVENTS",
   ];
 
   useEffect(() => {}, [path]);
@@ -42,7 +42,7 @@ const Navbar = () => {
   return (
     <div className={styles.navbarWrapper}>
       <div className={styles.navbar}>
-        <a href="/home">
+        <a href="#HOME">
           <LogoShortBlack />
         </a>
         <div className={styles.navbarDesk}>

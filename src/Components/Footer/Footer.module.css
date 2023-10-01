@@ -6,28 +6,8 @@
     width: 100%;
      margin-bottom: 20px;
      text-align: center;
+     text-transform: uppercase;
 }
 .footerWrapper>div{
     width: 95%;
-}
-
-.top{
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid rgba(19, 19, 19, 1);
-    padding: 20px 0px 20px 0px;
-    align-items: end;
-    margin-bottom: 20px;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-.top>div{
-    display: flex;
-    gap: 20px;
-}
-
-@media screen and (max-width: 460px) {
-.top{
-    justify-content: center;
-}
 }

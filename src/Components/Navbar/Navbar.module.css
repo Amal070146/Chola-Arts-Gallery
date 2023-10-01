@@ -79,13 +79,17 @@
   .innerSetMenuDiv {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 35px;
     margin-top: -10vh;
+    justify-content: space-around;
+    height: 50vh;
   }
 
   .menuDiv a,
   .menuDiv button {
     color: black;
+
+    font-size: 25px;
   }
   .buttonContent {
     display: none;
