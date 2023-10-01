@@ -1,9 +1,10 @@
 .galleryWrapper {
   display: flex;
   flex-direction: column;
-  padding: 0px 8vw;
+  padding: 0vh 8vw 3vh;
   justify-content: center;
   width: 100%;
+  gap: 3vh;
 }
 .header {
   display: flex;
@@ -25,16 +26,15 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  height: 100%;
   align-items: center;
   justify-content: center;
-  gap: 1px;
+  gap: 1vw;
 }
 
 .contentWrapper > div {
-  width: calc(100% / 3.1);
-  max-width: 500px;
-  min-width: 250px;
-  height: 40vh;
+  min-width: 200px;
+
   position: relative;
 }
 
@@ -44,21 +44,65 @@
   object-fit: cover;
 }
 
+.container {
+  height: 40vh;
+  overflow: hidden;
+  border-bottom: 7px solid rgba(231, 89, 19, 1);
+}
+
+.container0 {
+  /* The first container */
+  width: 43%;
+}
+
+.container1 {
+  /* The second container */
+  width: 55%;
+}
+
+.container2 {
+  /* The third container */
+  width: 54%;
+}
+
+.container3 {
+  /* The fourth container */
+  width: 44%;
+}
+
 @media screen and (max-width: 900px) {
   .contentWrapper > div {
-    width: calc(100% / 3);
-
     height: 30vh;
   }
 }
 @media screen and (max-width: 700px) {
-  .header h1{
+  .header h1 {
     font-size: 35px;
   }
+  .contentWrapper {
+    gap: 10px;
+  }
+  .container0 {
+    width: 42%;
+  }
+
+  .container1 {
+    width: 53%;
+  }
+
+  .container2 {
+    width: 53%;
+  }
+
+  .container3 {
+    width: 42%;
+  }
 }
-@media screen and (max-width: 500px) {
-  .contentWrapper > div {
-    width: 43vw;
-    min-width: 20vw;
+@media screen and (max-width: 530px) {
+  .container0,
+  .container1,
+  .container2,
+  .container3 {
+    width: 100%;
   }
 }

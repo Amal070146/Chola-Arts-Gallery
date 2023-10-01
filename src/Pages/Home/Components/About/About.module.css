@@ -2,7 +2,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 2vh;
+  gap: 5vh;
 }
 
 .wrapper {
@@ -85,6 +85,9 @@
 
 }
 @media screen and (max-width: 700px) {
+  .aboutWrapper{
+    gap: 0vh;
+  }
   .wrapper {
     height: fit-content;
   }
@@ -101,7 +104,7 @@
   .TopContainer img {
     min-width: 350px;
     border: none;
-    width: 90%;
+    width: 100%;
   }
   .BottomContainer {
     position: relative;
@@ -109,7 +112,8 @@
     gap: 1.5vh;
     width: 90%;
     min-width: 350px;
-    margin-top: 0;
+    margin-top: -4vh;
+    z-index: 880;
   }
   .BottomContainer > div {
     gap: 10px;
@@ -215,7 +219,7 @@
   .wrapperCEO .TopContainer img {
     min-width: 350px;
     border: none;
-    width: 90%;
+    width: 100%;
   }
   .BottomContainers {
     position: relative;
@@ -223,6 +227,8 @@
     gap: 1.5vh;
     width: 90%;
     min-width: 350px;
+    z-index: 880;
+    margin-top: -4vh;
   }
   .BottomContainers > div {
     gap: 10px;

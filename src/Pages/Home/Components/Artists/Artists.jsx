@@ -59,7 +59,7 @@ const Artists = () => {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        <Marquee speed={40} {...marqParams} style={{ width: "100vw" }}>
+        <Marquee speed={50} {...marqParams} style={{ width: "100vw" }}>
           {datas.map((src) => (
             <div className={styles.imgContainer}>
               <a href=""></a>
