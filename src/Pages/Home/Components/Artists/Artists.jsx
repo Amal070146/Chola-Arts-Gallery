@@ -3,11 +3,14 @@ import data from "../data.json";
 import Marquee from "react-fast-marquee";
 import styles from "./Artists.module.css";
 
-import img1 from "../assets/artists/1.svg";
-import img2 from "../assets/artists/3.svg";
-import img3 from "../assets/artists/5.svg";
-import img4 from "../assets/artists/6.svg";
-import img5 from "../assets/artists/7.svg";
+import img1 from "./assets/1.svg";
+import img6 from './assets/2.svg'
+import img2 from "./assets/3.svg";
+import img7 from './assets/4.svg'
+import img3 from "./assets/5.svg";
+import img4 from "./assets/6.svg";
+import img5 from "./assets/7.svg";
+import img8 from './assets/8.svg'
 
 const Artists = () => {
   const [marqueeSpeed, setMarqueeSpeed] = useState(40);
@@ -35,8 +38,16 @@ const Artists = () => {
       image: img2,
     },
     {
+      name: "ARUNA ALANCHERY",
+      image: img6,
+    },
+    {
       name: "SHAJI APPUKUTTAN",
       image: img3,
+    },
+    {
+      name: "SHINOJ CHORAN",
+      image: img7,
     },
     {
       name: "PRAMOD KURAMPALA",
@@ -45,6 +56,10 @@ const Artists = () => {
     {
       name: "LEENA RAJ R",
       image: img5,
+    },
+    {
+      name: "BINDHI RAJAGOPAL",
+      image: img8,
     },
   ];
   return (
@@ -62,7 +77,7 @@ const Artists = () => {
         <Marquee speed={50} {...marqParams} style={{ width: "100vw" }}>
           {datas.map((src) => (
             <div className={styles.imgContainer}>
-              <a href=""></a>
+              <a ></a>
               <img src={src.image} loading="lazy" />
               <h2>{src.name}</h2>
             </div>

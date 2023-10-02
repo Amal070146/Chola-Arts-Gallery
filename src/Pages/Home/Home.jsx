@@ -8,6 +8,7 @@ import Testimonial from "./Components/Testimonial/Testimonial";
 import Contact from "./Components/Contact/Contact";
 import Footer from "../../Components/Footer/Footer";
 import Navbar from "../../Components/Navbar/Navbar";
+import Events from "./Components/Events/Events";
 const Home = () => {
   return (
     <div>
@@ -16,6 +17,7 @@ const Home = () => {
       <About />
       <Gallery />
       <Artists />
+      <Events />
       <Testimonial />
       <Contact />
       <Footer />
