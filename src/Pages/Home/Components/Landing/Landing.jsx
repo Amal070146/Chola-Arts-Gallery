@@ -6,14 +6,14 @@ const Landing = () => {
   return (
     <div className={styles.landingWrapper} id="HOME">
       <div className={styles.left}>
-        <h1>CHOLA</h1>
+        <h1 className={styles.headingName}>CHŌLA</h1>
         <h2>ART GALLERY</h2>
         <p>CHALAKUDY</p>
         <a href="#ABOUT">
           <button>
-            <span className={styles.mScrollArrows+" "+styles.unu}></span>
-            <span className={styles.mScrollArrows+" "+styles.doi}></span>
-            <span className={styles.mScrollArrows+" "+styles.trei}></span>
+            <span className={styles.mScrollArrows + " " + styles.unu}></span>
+            <span className={styles.mScrollArrows + " " + styles.doi}></span>
+            <span className={styles.mScrollArrows + " " + styles.trei}></span>
           </button>
         </a>
       </div>

@@ -54,8 +54,7 @@ const About = () => {
             disheartened to see the dilapidated state of his alma mater. Moved
             by this sight, he approached the Ladies Club authorities with an
             ambitious proposal to transform the club into an art gallery.
-            Despite facing numerous objections and legal challenges, the Chola
-            Art Gallery triumphed over these obstacles and officially opened its
+            The Chola Art Gallery triumphed over these obstacles and officially opened its
             doors to artists and art enthusiasts on September 4, 2022.
           </p>
         </div>
