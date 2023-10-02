@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Home from "./Pages/Home/Home";
 import ProfileArtist from "./Pages/ProfileArtist/ProfileArtist";
+import Notfound from "./Pages/pageNotfound/notfound";
 
 function App() {
   const router = createBrowserRouter([
@@ -14,8 +15,16 @@ function App() {
       element: <Home />,
     },
     {
-      path: "/profileartist",
+      path: "/profileartist/:id",
       element: <ProfileArtist />,
+    },
+    {
+      path: "*",
+      element: <Notfound />,
+    },
+    {
+      path: "/404",
+      element: <Notfound />,
     },
   ]);
   return <RouterProvider router={router} />;

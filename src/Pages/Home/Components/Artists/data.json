@@ -1,0 +1,45 @@
+{
+  "artists": [
+    {
+      "name": "murali-nagapuzha",
+      "image": "https://raw.githubusercontent.com/Amal070146/Chola-Arts-Gallery/97b7dff79f5107727ee9c3e5fda142b01da3b5b4/src/Pages/Home/Components/Artists/assets/1.svg",
+      "work": [
+        {
+          "img": "https://raw.githubusercontent.com/Amal070146/Chola-Arts-Gallery/97b7dff79f5107727ee9c3e5fda142b01da3b5b4/src/Pages/Home/Components/Artists/assets/1.svg"
+        },
+        {
+          "img": "https://raw.githubusercontent.com/Amal070146/Chola-Arts-Gallery/97b7dff79f5107727ee9c3e5fda142b01da3b5b4/src/Pages/Home/Components/Artists/assets/1.svg"
+        }
+      ]
+    },
+    {
+      "name": "sajitha-r-sanhker",
+      "image": "https://raw.githubusercontent.com/Amal070146/Chola-Arts-Gallery/97b7dff79f5107727ee9c3e5fda142b01da3b5b4/src/Pages/Home/Components/Artists/assets/2.svg",
+      "work":null
+    },
+    {
+      "name": "aruna-alanchery",
+      "image": "https://raw.githubusercontent.com/Amal070146/Chola-Arts-Gallery/97b7dff79f5107727ee9c3e5fda142b01da3b5b4/src/Pages/Home/Components/Artists/assets/3.svg"
+    },
+    {
+      "name": "shaji-appukuttan",
+      "image": "https://raw.githubusercontent.com/Amal070146/Chola-Arts-Gallery/97b7dff79f5107727ee9c3e5fda142b01da3b5b4/src/Pages/Home/Components/Artists/assets/4.svg"
+    },
+    {
+      "name": "shinoj-choran",
+      "image": "https://raw.githubusercontent.com/Amal070146/Chola-Arts-Gallery/97b7dff79f5107727ee9c3e5fda142b01da3b5b4/src/Pages/Home/Components/Artists/assets/5.svg"
+    },
+    {
+      "name": "pramod-kurampala",
+      "image": "https://raw.githubusercontent.com/Amal070146/Chola-Arts-Gallery/97b7dff79f5107727ee9c3e5fda142b01da3b5b4/src/Pages/Home/Components/Artists/assets/6.svg"
+    },
+    {
+      "name": "leena-raj-r",
+      "image": "https://raw.githubusercontent.com/Amal070146/Chola-Arts-Gallery/97b7dff79f5107727ee9c3e5fda142b01da3b5b4/src/Pages/Home/Components/Artists/assets/7.svg"
+    },
+    {
+      "name": "bindhi-rajagopal",
+      "image": "https://raw.githubusercontent.com/Amal070146/Chola-Arts-Gallery/97b7dff79f5107727ee9c3e5fda142b01da3b5b4/src/Pages/Home/Components/Artists/assets/8.svg"
+    }
+  ]
+}

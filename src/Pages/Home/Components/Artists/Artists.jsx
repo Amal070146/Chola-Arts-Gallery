@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import data from "../data.json";
+
 import Marquee from "react-fast-marquee";
 import styles from "./Artists.module.css";
 
@@ -11,6 +11,7 @@ import img3 from "./assets/5.svg";
 import img4 from "./assets/6.svg";
 import img5 from "./assets/7.svg";
 import img8 from './assets/8.svg'
+import data from './data.json'
 
 const Artists = () => {
   const [marqueeSpeed, setMarqueeSpeed] = useState(40);
@@ -75,11 +76,11 @@ const Artists = () => {
         onMouseLeave={handleMouseLeave}
       >
         <Marquee speed={50} {...marqParams} style={{ width: "100vw" }}>
-          {datas.map((src) => (
+          {data.artists.map((src) => (
             <div className={styles.imgContainer}>
-              <a ></a>
+              <a href={`/profileartist/${src.name.toLowerCase()}`}></a>
               <img src={src.image} loading="lazy" />
-              <h2>{src.name}</h2>
+              <h2>{src.name.replace(/-/g, " ")}</h2>
             </div>
           ))}
         </Marquee>
