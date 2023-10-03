@@ -52,7 +52,7 @@ const Navbar = () => {
               <p
                 style={{
                   color: window.location.href.includes(`#${content}`)
-                    ? "rgba(231, 89, 19, 1)"
+                    ? "rgba(229, 149, 76, 1)"
                     : "",
                   fontWeight: window.location.href.includes(`#${content}`)
                     ? 600
@@ -88,7 +88,7 @@ const Navbar = () => {
                     <p
                       style={{
                         color: window.location.href.includes(`#${content}`)
-                          ? "rgba(231, 89, 19, 1)"
+                          ? "rgba(229, 149, 76, 1)"
                           : "",
                         fontWeight: window.location.href.includes(`#${content}`)
                           ? 600

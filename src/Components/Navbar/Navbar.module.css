@@ -22,11 +22,11 @@
   gap: 2.8vw;
 }
 .buttonContent {
-  border: 1px solid rgba(231, 89, 19, 1);
+  border: 1px solid rgba(229, 149, 76, 1);
   padding: 9px 15px;
 }
 .buttonContent:hover {
-  background-color: rgba(231, 89, 19, 1);
+  background-color: rgba(229, 149, 76, 1);
   color: white;
 }
 .navbarMob {
@@ -95,11 +95,11 @@
     display: none;
   }
   .buttonContents {
-    border: 1px solid rgba(231, 89, 19, 1);
+    border: 1px solid rgba(229, 149, 76, 1);
     padding: 9px 15px;
   }
   .buttonContents:hover {
-    background-color: rgba(231, 89, 19, 1);
+    background-color: rgba(229, 149, 76, 1);
     color: white;
   }
 }
