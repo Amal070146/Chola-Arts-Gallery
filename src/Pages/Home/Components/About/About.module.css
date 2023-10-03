@@ -22,7 +22,7 @@
 .TopContainer h1 {
   font-size: 12vw;
   font-weight: 200;
-  color: rgba(243, 171, 130, 0.07);
+  color: rgba(229, 149, 76, 0.07);
 }
 .TopContainer img {
   border: 0.8vw solid white;
@@ -41,8 +41,8 @@
   display: flex;
   flex-direction: column;
   gap: 6vh;
-  background-color: rgba(231, 89, 19, 1);
-  border: 1.5vw solid #f3ab82;
+  background-color: #E5954C;
+  border: 1.5vw solid #F2C99E;
   color: white;
   padding: 2vh 4vw 4vh;
   
@@ -60,7 +60,7 @@
 .BottomContainer > div .line {
   width: 5px;
   height: 6.5vw;
-  background-color: rgba(243, 171, 130, 1);
+  background-color: rgba(242, 201, 158, 1);
 }
 .BottomContainer > div h1 {
   font-size: 7vw;
@@ -139,7 +139,7 @@
 }
 .wrapperCEO .TopContainer img {
   width: 30vw;
-  border-color: #f3ab82;
+  border-color: rgba(242, 201, 158, 1);
 }
 
 .wrapperCEO .ballsImages {
@@ -156,7 +156,7 @@
 .wrapperCEO .line {
   width: 5px;
   height: 6.5vw;
-  background-color: rgba(231, 89, 19, 1);
+  background-color: rgba(229, 149, 76, 1);
 }
 .BottomContainers {
   width: 85%;
@@ -166,7 +166,7 @@
   align-items: end;
   gap: 4vh;
   background-color: #fff;
-  border: 1.5vw solid rgba(231, 89, 19, 1);
+  border: 1.5vw solid rgba(229, 149, 76, 1);
 
   padding: 2vh 4vw 4vh;
   margin-top: -12vw;
