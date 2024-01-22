@@ -43,7 +43,7 @@ const About = () => {
             <div className={styles.line}></div>
           </div>
           <p>
-            Jomon Aluka Abraham began his artistic journey in 1998 as a student
+            Jomon Alukka Abraham began his artistic journey in 1998 as a student
             at the Prathibha School of Arts, part of the Ladies Club. During his
             three-year academic pursuit, he also worked as a commercial artist.
             Later, he transitioned to a role as a designer and subsequently
